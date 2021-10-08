@@ -1,208 +1,521 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/603d097ec5.js" crossorigin="anonymous"></script> 
-    <a href="https://icons8.com/icon/amXjtNWVYSKP/figma"></a>
-    <title>Portafollio</title>
+<title>Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Onepage Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	    
+	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+ <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
 </head>
 <body>
-
-    <!--**********HEADER**********-->
-    
-<header>
-    <nav>
-        <section class="container-header nav-header">
-           
-            <div class="linksHead">
-                <a href="#home">Inicio</a>
-                <a href="#projects">Proyectos</a>
-                <a href="#about">Sobre mí</a>
-                <a href="#contact">Contacto</a>
+<div class="header" id="head">	
+      <div class="container"> 
+         <div class="header-top">
+      		 <div class="logo">
+				<a href="index.html"><img src="images/Logo sin fondo.png" style: width="150px", height="150px" alt=""/></a>
+			 </div>
+		   <div class="top-menu">
+		   	<span class="menu"> </span>
+			<ul>
+			 	<nav class="cl-effect-5">
+				<li><a class="active" href="index.html"><span data-hover="Home">home</span></a></li>
+				<li><a href="#about" class="scroll"><span data-hover="about">about</span></a></li>
+				<li><a href="#work" class="scroll"><span data-hover="projects"><span>projects</span></a></li>
+				<li><a href="#services" class="scroll"><span data-hover="services">services</span></a></li>
+				<li><a href="#contact" class="scroll"><span data-hover="contact">contact</span></a></li>
+				</nav>
+			 </ul>
+			 </div>
+			 <!--script-nav-->
+		 <script>
+		 $("span.menu").click(function(){
+		 $(".top-menu ul").slideToggle("slow" , function(){
+		 });
+		 });
+		 </script>
+			<div class="clearfix"></div>
+		 </div>  
+		  <div class="index-banner">
+       	   <div class="wmuSlider example1">
+			   <div class="wmuSliderWrapper">
+				   <article style="position: absolute; width: 100%; opacity: 0;"> 
+				   	<div class="banner-wrap">
+				   	       	<div class="banner_center">
+				   		 		<h1>hello!,</h1> 
+				   		 		<h2>i am <span>Nataly Estupiñan</span></h2>
+				   		 		
+				   		 		</div>
+				   		 </div>
+					</article>
+				   <article style="position: relative; width: 100%; opacity: 1;"> 
+				   	   	<div class="banner-wrap">
+				   	      <div class="banner_center">
+				   		 		<h1>i am</h1> 
+				   		 		<h2> <span>full stack web developer</span></h2>
+				   		 		
+				   		 		</div>
+				   		  </div>
+				   </article>
+				   <article style="position: absolute; width: 100%; opacity: 0;">
+				   	  	<div class="banner-wrap">
+				   	       <div class="banner_center">
+				   		 		<h1>my skills:</h1> 
+				   		 		<h2><span>html, css, javascript, react, python, angular, mysql, git, boostrap </span></h2>
+				   		 		
+				   		 		</div>
+				   		 </div>
+					 </article>
+				 </div>
+				
             </div>
-            <div class="burger">
-                <i class="uil uil-bars"></i>
-            </div>
-        </section>
-    </nav>
-   
-</header>
+            <script src="js/jquery.wmuSlider.js"></script> 
+			  <script>
+       			$('.example1').wmuSlider();         
+   		     </script> 	           	      
+      </div>
+	 </div>     
+	</div>
+	<div class="content">
+		<div class="about-section" id="about" id="about">
+	<div class="container">
+		<div class="about-header">
+			<h3>about</h3>
+			<div class="about-imag">
+			<img src="images/perfil.png"  alt=""/>
+			</div>
+			<div class="about-text">
+					<p>I am a full stack web developer and IT systems administrator. I am a creative and committed person, I love teamwork. I am learning every day about new technologies to offer you the best.</p> 
+					<p>I have made mobile applications, web pages, games and databases.	My hobby is enjoying the outdoors, my family and friends, I love meeting new places and people.</p>
+			</div>
+			<div class="clearfix"></div>
+			</div>
+			<div class="about-sectiongrids">
+				<div class="col-md-6 about-leftgrid">
+					<div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>HTML5</h4>
+						</div>
+						<div class="percentage">
+							<p>75%</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="skills">
+			              	<div style="width:75%"> </div>
+	                      </div>
+	                      </div>
+	                      <div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>CSS3</h4>
+						</div>
+						<div class="percentage">
+							<p>75%</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="skills">
+			              	<div style="width:75%"> </div>
+	                      </div>
+	                      </div>
+	                      <div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>JAVASCRIPT</h4>
+						</div>
+						<div class="percentage">
+							<p>75%</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="skills">
+			              	<div style="width:75%"> </div>
+	                      </div>
+	                      </div>
+	                      <div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>REACT</h4>
+						</div>
+						<div class="percentage">
+							<p>75%</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="skills">
+			              	<div style="width:75%"> </div>
+	                      </div>
+	                      </div>
 
-    <!--**********SECTION 2**********-->
-    
-    <section class="section2" id="home">
-        <img class="logo-image" src="./assets/img/logook.png" >
-<div class="home">
-   
-    <img src="./assets/img/perfil1.png" class="home-image" />
-       <h2 class="name">Nataly Estupiñan</h2>
+	</div>
+	<div class="col-md-6 about-rightgrid">
+		<div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>PYTHON</h4>
+						</div>
+						<div class="percentage">
+							<p>50%</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="skills">
+			              	<div style="width:55%"> </div>
+	                      </div>
+	                      </div>
+	                      <div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>GIT</h4>
+						</div>
+						<div class="percentage">
+							<p>75%</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="skills">
+			              	<div style="width:75%"> </div>
+	                      </div>
+	                      </div>
+	                      <div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>ANGULAR</h4>
+						</div>
+						<div class="percentage">
+							<p>50%</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="skills">
+			              	<div style="width:50%"> </div>
+	                      </div>
+	                      </div>
+	                      <div class="polls">
+					<div class="poll">
+						<div class="poll-desc">
+							<h4>SQL</h4>
+						</div>
+						<div class="percentage">
+							<p>75%</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="skills">
+			              	<div style="width:75%"> </div>
+	                      </div>
+	                      </div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="arrow1">
+	<a href="#work" class="scroll"><img src="images/arrow1.png" alt=""/></a>
+					</div>
+	</div>
+	</div>
+	<!-- about-section-ends -->
+	<div class="works-section" id="work" id="work">
+	   <div class="works-header">
+			<h3>projects</h3>
+				<p>The following projects I have done during my studies of the Development Bootcamp
+					full stack web, you will be able to see the repository and the deploy of each one of them.
+					The technologies used have been: html, css, javascript, react, angular, boostrap, sql and typescript. </p>
+		</div>
+		<div class="portfolio-section-bottom-row" id="portfolio">
+			<div class="container">
+				
+						<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+					<script type="text/javascript">
+						$(document).ready(function () {
+							$('#horizontalTab').easyResponsiveTabs({
+								type: 'default', //Types: default, vertical, accordion           
+								width: 'auto', //auto or any width like 600px
+								fit: true   // 100% fit in a container
+							});
+						});
+						
+					</script>
+						
+								<script type="text/javascript">
+									jQuery(function($) {
+										$(".swipebox").swipebox();
+									});
+								</script>
+								
+							<!-- Portfolio Ends Here -->
+						<div class="sap_tabs">
+							{% comment %} <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;"> {% endcomment %}
+								  {% comment %} <ul class="resp-tabs-list">
+									  <li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>All</span></li>
+									  <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>html, css javascript</span></li>
+									  <li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>react</span></li>
+									  <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>angular</span></li>
+									  <li class="resp-tab-item" aria-controls="tab_item-4" role="tab"><span>boostrap</span></li>
+									  <div class="clearfix"></div>
+								  </ul>	 {% endcomment %}
+								<div id="portfoliolist">
+									<div class="resp-tabs-container">
+										<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
+											<div class="tab_img">
+													<div class="col-md-3 img-top grid_box">
+														<a href="https://www.youtube.com/" class="swipebox"  title="Image Title">
+															  <img src="images/pic-1.jpg" class="img-responsive" alt="">
+															  
+														</a>
+													</div>
+													<div class="col-md-3 img-top grid_box">
+														<a href="https://www.youtube.com/" class="swipebox"  title="Image Title">
+															  <img src="images/pic-2.jpg" class="img-responsive" alt="">
+															   
+														</a>
+													</div>
+													<div class="col-md-3 img-top grid_box">
+														<a href="https://www.youtube.com/" class="swipebox"  title="Image Title">
+															  <img src="images/pic-3.jpg" class="img-responsive" alt="">
+															  
+														</a>
+													</div>
+													<div class="col-md-3 img-top grid_box">
+														<a href="https://www.youtube.com/" class="swipebox"  title="Image Title">
+															  <img src="images/pic-4.jpg" class="img-responsive" alt="">
+															  
+														</a>
+													</div>
+													<div class="col-md-3 img-top grid_box">
+														<a href="https://www.youtube.com/" class="swipebox"  title="Image Title">
+															  <img src="images/pic-5.jpg" class="img-responsive" alt="">
+															  
+														</a>
+													</div>
+													<div class="col-md-3 img-top grid_box">
+														<a href="https://www.youtube.com/" class="swipebox"  title="Image Title">
+															  <img src="images/pic-6.jpg" class="img-responsive" alt="">
+															  
+														</a>
+													</div>
+													<div class="col-md-3 img-top grid_box">
+														<a href="https://www.youtube.com/" class="swipebox"  title="Image Title">
+															  <img src="images/pic-7.jpg" class="img-responsive" alt="">
+															  
+														</a>
+													</div>
+													<div class="col-md-3 img-top grid_box">
+														<a href="https://www.youtube.com/" class="swipebox"  title="Image Title">
+															  <img src="images/pic-8.jpg" class="img-responsive" alt="">
+															  
+														</a>
+													</div>
+													<div class="clearfix"></div>	
+											</div>
+																				 
+										</div>
+										<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+											<div class="tab_img">
+												<div class="col-md-3 img-top grid_box">
+														<a href="https://www.youtube.com/" class="swipebox"  title="Image Title">
+															  <img src="images/pic-5.jpg" class="img-responsive" alt="">
+															  
+														</a>
+													</div>
+													<div class="col-md-3 img-top grid_box">
+														<a href="https://www.youtube.com/" class="swipebox"  title="Image Title">
+															  <img src="images/pic-6.jpg" class="img-responsive" alt="">
+															  
+														</a>
+													</div>
+													<div class="col-md-3 img-top grid_box">
+														<a href="images/pic-7.jpg" class="swipebox"  title="Image Title">
+															  <img src="images/pic-7.jpg" class="img-responsive" alt="">
+															  
+														</a>
+													</div>
+													<div class="col-md-3 img-top grid_box">
+														<a href="images/pic-8.jpg" class="swipebox"  title="Image Title">
+															  <img src="images/pic-8.jpg" class="img-responsive" alt="">
+															  
+														</a>
+													</div>
+													
+													<div class="clearfix"></div>	
+											</div>	 	        					 
+										</div>
+										<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
+											
+											<div class="tab_img">
+													<div class="col-md-3 img-top grid_box">
+														<a href="images/pic-2.jpg" class="swipebox"  title="Image Title">
+															  <img src="images/pic-2.jpg" class="img-responsive" alt="">
+															  
+														</a>
+													</div>
+													<div class="col-md-3 img-top grid_box">
+														<a href="images/pic-3.jpg" class="swipebox"  title="Image Title">
+															  <img src="images/pic-3.jpg" class="img-responsive" alt="">
+															  
+														</a>
+													</div>
+													<div class="col-md-3 img-top grid_box">
+														<a href="images/pic-4.jpg" class="swipebox"  title="Image Title">
+															  <img src="images/pic-4.jpg" class="img-responsive" alt="">
+															  
+														</a>
+													</div>
+													
+														<div class="clearfix"></div>
+											</div>		        					 
+										</div>
+										<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-3">
+											<div class="tab_img">
+													<div class="col-md-3 img-top grid_box">
+														<a href="images/pic-1.jpg" class="swipebox"  title="Image Title">
+															  <img src="images/pic-1.jpg" class="img-responsive" alt="">
+															  
+														</a>
+													</div>
+													<div class="col-md-3 img-top grid_box">
+														<a href="images/pic-2.jpg" class="swipebox"  title="Image Title">
+															  <img src="images/pic-2.jpg" class="img-responsive" alt="">
+															  
+														</a>
+													</div>
+													
+														<div class="clearfix"></div>
+											</div>	
+										</div>
+										<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-4">
+											<div class="tab_img">
+													<div class="col-md-3 img-top grid_box">
+														<a href="images/pic-1.jpg" class="swipebox"  title="Image Title">
+															  <img src="images/pic-1.jpg" class="img-responsive" alt="">
+															  
+														</a>
+													</div>
+													
+														<div class="clearfix"></div>
+											</div>	
+										</div>										
+									</div>	
+								</div>
+							</div>
+						</div>				
+ 
+				<div class="arrow">
+					<a href="#services" class="scroll"><img src="images/arrow.png" alt=""/></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- portfolio-section-ends -->
+	<div class="services-section" id="services">
+			<div class="container"> 
+			<div class="services-header">
+				<h3>services</h3>
+					<p>The services I offer are focused on improving the recognition of your brand through different technologies that reflect an attractive result for your clients.</p>
+			</div>
+			<div class="services-sectiongrids">
+				<div class="col-md-4 services-grid">
+					<img src="images/img1.png" alt=""/>
+					<h4>webdesign</h4>
+					<p>web design of static and dynamic websites, all according to your needs.</p>
+				</div>
+				<div class="col-md-4 services-grid">
+					<img src="images/img2.png" alt=""/>
+					<h4>Branding</h4>
+					<p>Creation of your own brand: corporate image (logo, colors, type of text).</p>
+				</div>
+				<div class="col-md-4 services-grid">
+					<img src="images/img3.png" alt=""/>
+					<h4>web development</h4>
+					<p>Development of mobile applications, programs, databases, whatever your company needs to respond to market needs.</p>
+				</div>
+				<div class="clearfix"></div>
+				<div class="arrow1">
+					<a href="#contact" class="scroll"><img src="images/arrow1.png" alt=""/></a>
+					</div>
+		</div>
+		</div>
+		</div>
+		<!-- services-section-ends -->
+	</div>
+	<div class="footer-section" id="contact" id="contact">
+			<div class="container"> 
+			<div class="contact-header">
+				<h3> contact</h3>
+					<p>To contact me, you can fill out the following form and your message will arrive directly to my email. You can also click on the logos of the social media icons to learn more about me. </p>
+			</div>
+			<div class="social-icon">
+				<a href="#"><i class="icon1"></i></a>
+				<a href="#"><i class="icon2"></i></a>
+				<a href="#"><i class="icon3"></i></a>
+				<a href="#"><i class="icon4"></i></a>
+				<a href="#"><i class="icon5"></i></a>
+				<a href="#"><i class="icon6"></i></a>
+				<a href="#"><i class="icon7"></i></a>
+				<a href="#"><i class="icon8"></i></a>
+			</div>
+			<div class="contact">
+				<form>
+					<div class="col-md-4 contactgrid">
+						<input type="text" class="text" value=" name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' name';}">
+					</div>
+					<div class="col-md-4 contactgrid">
+						<input type="text" class="text" value="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'email';}">
+					</div>
+					<div class="col-md-4 contactgrid">
+						<input type="text" class="text" value="phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'phone';}">
+					</div>
+					<div class="col-md-8 contactgrid1">
+						<textarea onfocus="if(this.value == 'Your Message') this.value='';" onblur="if(this.value == '') this.value='Your Message';" >Your Message</textarea>
+					</div>
+					<div class="col-md-4 contactgrid2">
+						<input type="submit" value="[send message]">
+					</div>
+				   <div class="clearfix"></div>
+				</form>
+			</div>
+			<div class="footer-bottom">
+
+					<p>&copy; 2021. All rights  Reserved | Desarrollado por Nataly Estupiñan</p>
+
+					</div>
+					<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 </div>
-<div class="div-contain-section2">
-    <div class="tittle-contain-section2">
-        <h2 class="title-section2">
-            Desarrolladora y diseñadora web.
-            </h2>
-        <p class="text-section2">Gran experiencia en el diseño y desarrollo de sitios web personalizados.</p>
-        
-    </div>
-   
-    
-</section>
 
-    <!--**********PROYECTOS**********-->
-        
-            <section class="portadas" id="projects">
-                 <div class="container">
-                    <h2 class="subtitle">Proyectos</h2>
-                    <div class="portadas__grid">
-    
-                        <article class="portadas__item">
-                            <img src="./assets/img/Auto-text.png" class= "portadas__img"alt="">
-                            <div class="portadas__hover">
-                                <a href="https://github.com/Nataly1Estupinan/50-retos-js/tree/main/AutoText"></a><h2 class="portadas__title">Auto-Text</h2>
-                                <i class="far fa-file-alt portadas_icon"></i>
-                            </div>
-                        </article>
-    
-                        <article class="portadas__item">
-                            <img src="./assets/img/Expandingcards.png" class= "portadas__img"alt="">
-                            <div class="portadas__hover">
-                               
-                               <a href="https://github.com/Nataly1Estupinan/50-retos-js/tree/main/Expanding%20Cards"></a> <h2 class="portadas__title"> Expanding Cards</h2>
-                                <i class="far fa-file-alt portadas_icon"></i>
-                            </div>
-                        </article>
-    
-                        <article class="portadas__item">
-                            <img src="./assets/img/Hiddes-search.png" class= "portadas__img"alt="">
-                            <div class="portadas__hover">
-                               <a href="https://github.com/Nataly1Estupinan/50-retos-js/tree/main/Hiddes%20Search"></a> <h2 class="portadas__title">Hiddes Search</h2>
-                                <i class="far fa-file-alt portadas_icon"></i>
-                            </div>
-                        </article>
-    
-                        <article class="portadas__item">
-                            <img src="./assets/img/Progress-Steps.png" class= "portadas__img"alt="">
-                            <div class="portadas__hover">
-                               <a href="https://github.com/Nataly1Estupinan/50-retos-js/tree/main/ProgressSteps"></a> <h2 class="portadas__title">Progress Steps</h2>
-                                <i class="far fa-file-alt portadas_icon"></i>
-                            </div>
-                        </article>
-
-                        
-                        <article class="portadas__item">
-                            <img src="./assets/img/Rotating-Navigation.png" class= "portadas__img"alt="">
-                            <div class="portadas__hover">
-                               <a href="https://github.com/Nataly1Estupinan/50-retos-js/tree/main/Rotating%20Navigation"></a> <h2 class="portadas__title">Rotating Navigation</h2>
-                                <i class="far fa-file-alt portadas_icon"></i>
-                            </div>
-                        </article>
-                        <article class="portadas__item">
-                            <img src="./assets/img/Pokedex.jpg" class= "portadas__img"alt="">
-                            <div class="portadas__hover">
-                                <h2 class="portadas__title">Pokedex</h2>
-                                <i class="far fa-file-alt portadas_icon"></i>
-                            </div>
-                        </article>
-    
-                    </div>
-                </div>
-            </section>
-
-            <!--**********Sobre mí**********-->
-            <div class="timeline" id="about">
-                <h2 class="subtitle2">Sobre mí</h2>
-                    <div class="container">
-                        <h1>Timeline profesional &rarr;</h1>
-                    </div>
-                    <section class="timeline">
-                      <ol>
-                        <li>
-                          <div>
-                            <time>2014</time>Profesional en Administración de sistemas informáticos.
-                          </div>
-                        </li>
-                        <li>
-                          <div>
-                            <time>2015</time>Diplomado en Consultoría Empresarial.
-                          </div>
-                        </li>
-                        <li>
-                          <div>
-                            <time>2016</time> Inicio experiencia laboral como consultora empresarial.
-                          </div>
-                        </li>
-                        <li>
-                          <div>
-                            <time>2017</time>Estudios de Community manager.
-                          </div>
-                        </li>
-                        <li>
-                          <div>
-                            <time>2021</time>Bootcamp: Desarrollo web.
-                          </div>
-                        </li>
-                    </div>
-                        <div class="hero"> 
-                            <h1>Skills</h1>
-                <p><h5> <i class="uil uil-html5-alt"></i> HTML</h5></p>
-                        <div class="container-bar-progress">
-                            <div class="skills html">50%</div>
-                         </div>
-         
-                <p><h5> <i class="uil uil-css3-simple"></i>CSS</h5></p>
-                         <div class="container-bar-progress">
-                             <div class="skills css">40%</div>
-                         </div>
-         
-                <p><h5><i class="uil uil-java-script"></i> JavaScript</h5></p>
-                         <div class="container-bar-progress">
-                             <div class="skills js">35%</div>
-                        </div>
-         
-                <p><h5> <i class="uil uil-java-script"></i>REACT</h5></p>
-                        <div class="container-bar-progress">
-                            <div class="skills react">10%</div>
-                        </div>
-                    </div>
-                   
-
-                
-             <!--*********FORM**********     -->
-             <form target="_blank" id="contact" action="https://formsubmit.co/naesdu@gmail.com" method="POST">
-                    <h1>Envía un mensaje</h1>
-                    <input type="text" name="name" placeholder="Nombre y apellido" required>
-                    <input type="email" name="email" placeholder="Correo electrónico" required>
-                    <textarea placeholder="Escribe tu mensaje" name="message" rows="10" required></textarea>
-                    <button id="enviar" type="submit" class="btn"> <h4>Enviar mensaje</h4></button>
-                </form>
-         
-        
-        <!--**********FOOTER-->
-        <footer class="footer">
-            <nav class="nav-footer">
-            <ul footer-list>
-                <li class="icon-footer"> <a href="https://github.com/Nataly1Estupinan"><i class="uil uil-github-alt"></i>   </a> </li>
-                <li class="icon-footer"><a href="https://www.linkedin.com/in/natalyestupinan/"><i class="uil uil-linkedin-alt"></i></a></li>
-                <li class="icon-footer"><a href="">Desarrollado por Nataly</a></li>
-
-            </ul>
-        </nav>
-        </footer>
-      
-  </body>
-   </html>
-
-
-            
-        
-
+		</div>		
+	</div>
+	
+	
+</body>
+</html>
