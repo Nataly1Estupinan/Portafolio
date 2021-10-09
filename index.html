@@ -97,7 +97,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="about-header">
 			<h3>about</h3>
 			<div class="about-imag">
-			<img src="images/perfil.png"  alt=""/>
+			<img src="images/banner8.jpg"  alt=""/>
 			</div>
 			<div class="about-text">
 					<p>I am a full stack web developer and IT systems administrator. I am a creative and committed person, I love teamwork. I am learning every day about new technologies to offer you the best.</p> 
@@ -258,18 +258,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										$(".swipebox").swipebox();
 									});
 								</script>
-								
+							
+
+
+
 							<!-- Portfolio Ends Here -->
 						<div class="sap_tabs">
-							{% comment %} <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;"> {% endcomment %}
-								  {% comment %} <ul class="resp-tabs-list">
+							<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+								   <ul class="resp-tabs-list">
 									  <li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>All</span></li>
 									  <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>html, css javascript</span></li>
 									  <li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>react</span></li>
 									  <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>angular</span></li>
 									  <li class="resp-tab-item" aria-controls="tab_item-4" role="tab"><span>boostrap</span></li>
 									  <div class="clearfix"></div>
-								  </ul>	 {% endcomment %}
+								  </ul>	
 								<div id="portfoliolist">
 									<div class="resp-tabs-container">
 										<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
@@ -281,7 +284,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 														</a>
 													</div>
 													<div class="col-md-3 img-top grid_box">
-														<a href="https://www.youtube.com/" class="swipebox"  title="Image Title">
+														<a href="https://nataly1estupinan.github.io/LandingMusicStore/" class="swipebox"  title="Landing music store">
 															  <img src="images/pic-2.jpg" class="img-responsive" alt="">
 															   
 														</a>
@@ -422,6 +425,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 	</div>
+
 	<!-- portfolio-section-ends -->
 	<div class="services-section" id="services">
 			<div class="container"> 
@@ -452,6 +456,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		</div>
 		</div>
+
+
 		<!-- services-section-ends -->
 	</div>
 	<div class="footer-section" id="contact" id="contact">
@@ -470,22 +476,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<a href="#"><i class="icon7"></i></a>
 				<a href="#"><i class="icon8"></i></a>
 			</div>
-			<div class="contact">
-				<form>
+
+
+		
+			 <div class="contact">
+				<form action="https://formspree.io/naesdu@gmail.com" method="POST">
 					<div class="col-md-4 contactgrid">
-						<input type="text" class="text" value=" name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' name';}">
+						<input type="text" id="name" class="text" name=" name" placeholder="Name">
 					</div>
 					<div class="col-md-4 contactgrid">
-						<input type="text" class="text" value="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'email';}">
+						<input type="text"id="email" class="text" email="email" placeholder="email">
 					</div>
 					<div class="col-md-4 contactgrid">
-						<input type="text" class="text" value="phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'phone';}">
+						<input type="text" id="phone" class="text" phone="phone"placeholder="phone">
 					</div>
 					<div class="col-md-8 contactgrid1">
-						<textarea onfocus="if(this.value == 'Your Message') this.value='';" onblur="if(this.value == '') this.value='Your Message';" >Your Message</textarea>
+						<textarea id="subject" name="subject" placeholder="Your message">Your Message</textarea>
 					</div>
 					<div class="col-md-4 contactgrid2">
-						<input type="submit" value="[send message]">
+					<button>	<input type="submit" value="Enviar"></button>
 					</div>
 				   <div class="clearfix"></div>
 				</form>
