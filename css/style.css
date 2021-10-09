@@ -19,8 +19,8 @@ h1,h2,h3,h4,h5,h6{
 	margin:0 0;
 }
 p{
-	padding:0 0;
-	margin:0 0;
+	padding:2px 0;
+	margin:2px 0;
 }
 ul{
 	padding:0 0;
@@ -969,6 +969,10 @@ padding-bottom: 2em;
            	.header {
            		min-height: 360px;
 			}
+			p{
+				padding:2px 2px;
+				margin:2px 0;
+			}
 			.banner_center {
 				top: 33%;
 			}
@@ -1403,9 +1407,19 @@ padding-bottom: 2em;
 			background: none;
 			}
 		}
+	@media (max-width:700px) {
+		.about-text{
+			font-size: 12px;
+			gap: 2px;
+		}
+		
+	}	
 	@media(max-width:414px){
 		.resp-tab-item {
 		margin: 8px 9px 0px;
+		}
+		.about-text{
+			font-size: 10px;
 		}
 	}
 	@media(max-width:375px){
@@ -1509,7 +1523,7 @@ padding-bottom: 2em;
 			width: 100%;
 		}
 		.about-sectiongrids {
-			padding: 15px 0px;
+			padding: 0px 0px;
 		}
 		.poll-desc h4 {
 			font-size: 13px;
