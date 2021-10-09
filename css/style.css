@@ -34,7 +34,7 @@ body{
 	
 }
 .header{
-	background: url("../images/puente.jpg") no-repeat center top;
+	background: url("../images/sofia-sanchez-UcoDZZ7DCXY-unsplash.jpg") no-repeat center top;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -60,7 +60,7 @@ body{
 }
 .top-menu ul li a{
 	font-size: 1.1em;
-	color: #4d7eef;
+	color: #d8d2d2;
 	text-decoration: none;
 	text-transform: uppercase;
 	
@@ -78,7 +78,7 @@ nav a {
 	position: relative;
 	display: inline-block;
 	outline: none;
-	color: rgb(0, 0, 0);
+	color: #d8d2d2;
 	text-decoration: none;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -145,13 +145,13 @@ nav a:focus {
 
 }
 .banner_center h1 {
-	color: #2d2d2e;
+	color: #d8d2d2;
 	font-family: 'Arvo', serif;
 	text-transform: uppercase;
 	font-size: 2.4em;
 }
 .banner_center h2 {
-	color: #2d2d2e;
+	color: #d8d2d2;
 	font-family: 'Arvo', serif;
 	text-transform: uppercase;
 	font-size: 2.4em;
@@ -162,6 +162,7 @@ nav a:focus {
 	color: #ef664d;
 	font-weight: 900;
 }
+
 .wmuSliderPagination {
 	z-index: 2;
 	position: absolute;
@@ -908,10 +909,12 @@ padding-bottom: 2em;
 				font-size: 2.2em;
 			}
 			.works-header {
-				width: 100%;
+				width: 80%;
 			}
 			.works-header p {
 				font-size: 1em;
+				text-align: left;
+				height: auto;
 			}
 			#filters {
 			   margin: 0 0px 0em 30em;
@@ -1021,6 +1024,7 @@ padding-bottom: 2em;
 			}
 			.works-header p {
 				padding: 15px 0;
+				
 			}
 			#filters {
 				margin: 0px 0px 0em 15em;
@@ -1038,7 +1042,7 @@ padding-bottom: 2em;
 				width: 80%;
 			}
 			.about-text p {
-				height: 65px;
+				height: auto;
 				overflow: hidden;
 			}
 			.about-sectiongrids {
@@ -1205,7 +1209,7 @@ padding-bottom: 2em;
 			top: -30px;
 		}
 		.about-text p {
-			height: 46px;
+			height: auto;
 			overflow: hidden;
 		}
 		.about-header h3 {
@@ -1341,7 +1345,7 @@ padding-bottom: 2em;
 		}
 		.works-header p {
 			
-			height: 66px;
+			height: auto;
 			overflow: hidden;
 		}
 		.works-header p {
@@ -1507,7 +1511,7 @@ padding-bottom: 2em;
 			padding: 1em 0;
 		}
 		.about-text p {
-			height: 37px;
+			height: auto;
 			overflow: hidden;
 			font-size: 0.9em;
 		}
