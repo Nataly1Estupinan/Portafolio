@@ -696,7 +696,14 @@ h2.resp-accordion {
 }
 
 
-
+.portadas__title{
+	
+	text-align: center;
+	color: white;
+	font-size: 12px;
+	padding: 1rem;
+	
+}
 
 .footer-section {
 	padding: 40px 0px;
@@ -1042,6 +1049,9 @@ padding-bottom: 2em;
 		.header-top {
 		padding-top:2em;
 		}
+		.logo{
+			overflow:hidden;
+		}
 	span.menu:before
 					{
 					content: url(../images/nav.png) no-repeat 0px 0px;
@@ -1233,7 +1243,7 @@ padding-bottom: 2em;
 			padding-top: 1.5em;
 		}
 		.logo img {
-			width: 80%;
+			overflow:hidden;
 		}
 		.top-menu ul {
 			width: 93%;
